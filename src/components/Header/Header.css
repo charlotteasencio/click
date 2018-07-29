@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    color: white;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: teal;
+    height: 60px;
+  }
+
+.instructions{
+    background: lightgray;
+    margin-top: 60px;
+  }
+
+.instructions h1{
+    display: flex;
+    justify-content: center;
+}
+
+.instructions p {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .fixed-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 125px;
+        opacity: .8;
+    }
+
+    .instructions{
+        margin-top: 125px;
+    }
+}
