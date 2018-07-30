@@ -35,10 +35,11 @@
         flex-direction: column;
         justify-content: flex-start;
         height: 125px;
-        opacity: .8;
+        padding-left: 10px;
     }
 
     .instructions{
         margin-top: 125px;
+        padding-left: 10px;
     }
 }
