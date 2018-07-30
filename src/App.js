@@ -1,49 +1,46 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 import Header from "./components/Header";
-import Imagebox from './components/Imagebox';
+import Imagebox from "./components/Imagebox";
 import images from "./images.json";
-import Imagegrid from './components/Imagegrid';
+import Imagegrid from "./components/Imagegrid";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images,
+      currentScore: 0,
+      topScore: 0,
+      show: true,
+      rightWrong: "",
+      clicked: []
+    };
+  }
 
-  state = {
-    images,
-    currentScore: 0,
-    topScore: 0,
-    rightWrong: "",
-    clicked: [],
+  //function to shuffleCards
+  //function to handle click event
+  HandleClick = () => {
+    this.setState({ show: !this.state.show });
   };
-
-//function to shuffleCards
-//function to handle click event
-//function to increment score
-//function for top score
-//reset function 
-
+  //function to increment score
+  IncrementItem = () => {
+    this.setState({ currentScore: this.state.currentScore + 1 });
+  };
+  //function for top score
+  //reset function
 
   render() {
     return (
-    <div>
-      <Header
-        score={this.state.currentScore}
-        topScore={this.state.topScore}
-        rightWrong={this.state.rightWrong}
-      />
-      <Imagegrid>
-        {this.state.images.map(image => (
-          <Imagebox
-            id={image.id}
-            key={image.id}
-            image={image.image}
-            handleClick={this.handleClick}
-            handleIncrement={this.handleIncrement}
-            handleReset={this.handleReset}
-            handleShuffle={this.handleShuffle}
-          />
-        ))}
-      </Imagegrid>
-    </div>
+      <div>
+        <Header />
+        <Imagegrid>
+          {this.state.images.map(image => (
+            <Imagebox id={image.id} key={image.id} image={image.image} />
+          ))}
+          {this.state.show ? <h2>{this.state.currentScore}</h2> : ""}
+        </Imagegrid>
+      </div>
     );
   }
 }
