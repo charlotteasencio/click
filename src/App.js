@@ -9,16 +9,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: [],
+      images: [],
       currentScore: 0,
       topScore: 0,
       alreadyClicked: null,
-      guessedCorrectly: null,
-      images,
+      guessedCorrectly: null
     };
 
-    for (let i=0; i<10; i++) {
-      this.state.cards.push(i)
+    for (let i = 0; i < 10; i++) {
+      this.state.images.push(i);
     }
     console.log(this.state);
   }
@@ -32,20 +31,14 @@ class App extends Component {
     return (
       <div>
         <div className="header fixed-top">
-          <p className="score">
-            Score:
-          </p>
+          <p className="score">Score:</p>
           <p className="clickImage"> Click any image to begin</p>
           <p className="topScore" id="end">
             Top Score:
-         </p>
+          </p>
         </div>
         <Header />
-        <Imagegrid>
-          {this.state.images.map(image => (
-              <Imagebox id={image.id} key={image.id} image={image.image} />
-          ))}
-        </Imagegrid>
+        <Imagegrid order={this.state.images} />
       </div>
     );
   }
