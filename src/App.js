@@ -12,7 +12,7 @@ class App extends Component {
       images: [],
       score: 0,
       topScore: 0,
-      alreadyClicked: null,
+      clicked: false,
       guessedCorrectly: null
     };
 
@@ -22,17 +22,18 @@ class App extends Component {
     console.log(this.state);
   }
 
+  //function to handle click event
+  //function to increment score
   incrementScore = () => {
     console.log("I've been clicked");
     console.log(this.state);
     this.setState({
-      score: this.state.score + 1
+      score: this.state.score + 1,
+      clicked: true
     });
   };
 
   //function to shuffleCards
-  //function to handle click event
-  //function to increment score
   //function for top score
   //reset function
 
