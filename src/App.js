@@ -9,24 +9,22 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      images,
+      cards: [],
       currentScore: 0,
       topScore: 0,
-      show: true,
-      rightWrong: "",
-      clicked: []
+      alreadyClicked: null,
+      guessedCorrectly: null,
+      images,
     };
-  }
 
+    for (let i=0; i<10; i++) {
+      this.state.cards.push(i)
+    }
+    console.log(this.state);
+  }
   //function to shuffleCards
   //function to handle click event
-  HandleClick = () => {
-    this.setState({ show: !this.state.show });
-  };
   //function to increment score
-  IncrementItem = () => {
-    this.setState({ currentScore: this.state.currentScore + 1 });
-  };
   //function for top score
   //reset function
 
@@ -36,12 +34,8 @@ class App extends Component {
         <Header />
         <Imagegrid>
           {this.state.images.map(image => (
-            <div>
               <Imagebox id={image.id} key={image.id} image={image.image} />
-              <button onClick={this.IncrementItem} />
-            </div>
           ))}
-          {this.state.show ? <h2>{this.state.currentScore}</h2> : ""}
         </Imagegrid>
       </div>
     );
