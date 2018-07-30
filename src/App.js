@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Imagebox from "./components/Imagebox";
-import images from "./images.json";
 import Imagegrid from "./components/Imagegrid";
 
 class App extends Component {
@@ -36,22 +35,26 @@ class App extends Component {
   //function to shuffleCards
   //function for top score
   //reset function
+  resetFunction = () => {
+    if (this.state.score > this.state.topScore) {
+      this.setState({
+        topScore: this.state.score
+      });
+    }
+  };
 
   render() {
     return (
       <div>
-        <div className="header fixed-top" onClick={this.incrementScore}>
+        <div className="header fixed-top">
           <p className="score">Score: {this.state.score}</p>
           <p className="clickImage"> Click any image to begin</p>
           <p className="topScore" id="end">
-            Top Score:
+            Top Score: {this.state.topScore}
           </p>
         </div>
         <Header />
-        <Imagegrid
-          order={this.state.images}
-          incrementScore={this.incrementScore}
-        />
+        <Imagegrid incrementScore={this.incrementScore} />
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Imagebox from "../Imagebox";
 import "./Imagegrid.css";
-import images from "../../images.json";
 
 class Imagegrid extends Component {
   render() {
