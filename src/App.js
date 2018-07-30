@@ -31,6 +31,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        <div className="header fixed-top">
+          <p className="score">
+            Score:
+          </p>
+          <p className="clickImage"> Click any image to begin</p>
+          <p className="topScore" id="end">
+            Top Score:
+         </p>
+        </div>
         <Header />
         <Imagegrid>
           {this.state.images.map(image => (

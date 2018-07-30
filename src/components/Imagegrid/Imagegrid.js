@@ -1,6 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
+import Imagebox from "../Imagebox";
 import "./Imagegrid.css";
 
-const Imagegrid = props => <div className="imageGrid">{props.children}</div>;
+class Imagegrid extends Component {
+  render() {
+    console.log("Imagegrid", this.props);
+    return (
+      <div>
+        <div className="imageRow">
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+        </div>
+        <div className="imageRow">
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+        </div>
+        <div className="imageRow">
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+          <Imagebox />
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Imagegrid;
