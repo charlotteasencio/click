@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header";
-import Imagebox from './components/Imagebox/Imagebox';
+import Imagebox from './components/Imagebox';
 import images from "./images.json";
 import Imagegrid from './components/Imagegrid';
-
-
-function shuffleCards (array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-};
 
 class App extends Component {
 
@@ -24,44 +15,12 @@ class App extends Component {
     clicked: [],
   };
 
-  handleClick = id => {
-    if (this.state.clicked.indexOf(id) === -1) {
-      this.handleIncrement();
-      this.setState({ clicked: this.state.clicked.concat(id) });
-    } else {
-      this.handleReset();
-    }
-  };
+//function to shuffleCards
+//function to handle click event
+//function to increment score
+//function for top score
+//reset function 
 
-  handleIncrement = () => {
-    const newScore = this.state.currentScore + 1;
-    this.setState({
-      currentScore: newScore,
-      rightWrong: ""
-    });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
-    }
-    else if (newScore === 12) {
-      this.setState({ rightWrong: "You win!" });
-    }
-    this.handleShuffle();
-  };
-
-  handleReset = () => {
-    this.setState({
-      currentScore: 0,
-      topScore: this.state.topScore,
-      rightWrong: "S",
-      clicked: []
-    });
-    this.handleShuffle();
-  };
-
-  handleShuffle = () => {
-    let shuffledCards = shuffleCards(images);
-    this.setState({ cards: shuffledCards });
-  };
 
   render() {
     return (
