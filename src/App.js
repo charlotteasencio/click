@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       images: [],
-      currentScore: 0,
+      score: 0,
       topScore: 0,
       alreadyClicked: null,
       guessedCorrectly: null
@@ -21,6 +21,15 @@ class App extends Component {
     }
     console.log(this.state);
   }
+
+  incrementScore = () => {
+    console.log("I've been clicked");
+    console.log(this.state);
+    this.setState({
+      score: this.state.score + 1
+    });
+  };
+
   //function to shuffleCards
   //function to handle click event
   //function to increment score
@@ -30,15 +39,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="header fixed-top">
-          <p className="score">Score:</p>
+        <div className="header fixed-top" onClick={this.incrementScore}>
+          <p className="score">Score: {this.state.score}</p>
           <p className="clickImage"> Click any image to begin</p>
           <p className="topScore" id="end">
             Top Score:
           </p>
         </div>
         <Header />
-        <Imagegrid order={this.state.images} />
+        <Imagegrid
+          order={this.state.images}
+          incrementScore={this.incrementScore}
+        />
       </div>
     );
   }

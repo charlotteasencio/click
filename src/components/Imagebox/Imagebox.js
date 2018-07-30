@@ -5,7 +5,7 @@ import image from "../../images.json";
 
 class Imagebox extends Component {
   render() {
-    return <div className="imageBox" />;
+    return <div className="imageBox" onClick={this.props.incrementScore} />;
   }
 }
 export default Imagebox;
