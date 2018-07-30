@@ -36,7 +36,10 @@ class App extends Component {
         <Header />
         <Imagegrid>
           {this.state.images.map(image => (
-            <Imagebox id={image.id} key={image.id} image={image.image} />
+            <div>
+              <Imagebox id={image.id} key={image.id} image={image.image} />
+              <button onClick={this.IncrementItem} />
+            </div>
           ))}
           {this.state.show ? <h2>{this.state.currentScore}</h2> : ""}
         </Imagegrid>
