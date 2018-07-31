@@ -1,50 +1,50 @@
 [
   {
-    id: 1,
-    image: "https://s22.postimg.cc/rs31s4jf5/cake.png"
+    "id": 1,
+    "image": "https://s22.postimg.cc/rs31s4jf5/cake.png"
   },
   {
-    id: 2,
-    image: "https://s22.postimg.cc/yvax7rjpt/boombox.png"
+    "id": 2,
+    "image": "https://s22.postimg.cc/yvax7rjpt/boombox.png"
   },
   {
-    id: 3,
-    image: "https://s22.postimg.cc/parakwp8x/doughnut.png"
+    "id": 3,
+    "image": "https://s22.postimg.cc/parakwp8x/doughnut.png"
   },
   {
-    id: 4,
-    image: "https://s22.postimg.cc/gshugky5t/hamburger.png"
+    "id": 4,
+    "image": "https://s22.postimg.cc/gshugky5t/hamburger.png"
   },
   {
-    id: 5,
-    image: "https://s22.postimg.cc/w17rue9up/headphones.png"
+    "id": 5,
+    "image": "https://s22.postimg.cc/w17rue9up/headphones.png"
   },
   {
-    id: 6,
-    image: "https://s22.postimg.cc/wqqk6rptt/icecream.png"
+    "id": 6,
+    "image": "https://s22.postimg.cc/wqqk6rptt/icecream.png"
   },
   {
-    id: 7,
-    image: "https://s22.postimg.cc/6v6tnliv5/microphone.png"
+    "id": 7,
+    "image": "https://s22.postimg.cc/6v6tnliv5/microphone.png"
   },
   {
-    id: 8,
-    image: "https://s22.postimg.cc/z82be3ew1/planet.png"
+    "id": 8,
+    "image": "https://s22.postimg.cc/z82be3ew1/planet.png"
   },
   {
-    id: 9,
-    image: "https://s22.postimg.cc/6v6tnn0vl/popsicle.png"
+    "id": 9,
+    "image": "https://s22.postimg.cc/6v6tnn0vl/popsicle.png"
   },
   {
-    id: 10,
-    image: "https://s22.postimg.cc/l1mkiuwb5/pizza.png"
+    "id": 10,
+    "image": "https://s22.postimg.cc/l1mkiuwb5/pizza.png"
   },
   {
-    id: 11,
-    image: "https://s22.postimg.cc/tjw0n7xox/ticket.png"
+    "id": 11,
+    "image": "https://s22.postimg.cc/tjw0n7xox/ticket.png"
   },
   {
-    id: 12,
-    image: "https://s22.postimg.cc/aesrdgqqp/watermelon.png"
+    "id": 12,
+    "image": "https://s22.postimg.cc/aesrdgqqp/watermelon.png"
   }
-];
+]
