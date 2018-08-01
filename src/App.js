@@ -14,11 +14,6 @@ class App extends Component {
       score: 0,
       topScore: 0
     };
-
-    for (let i = 0; i < 10; i++) {
-      this.state.Images.push(i);
-    }
-    console.log(this.state);
   }
 
   //function to handle click event
