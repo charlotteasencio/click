@@ -1,50 +1,62 @@
 [
   {
     "id": 1,
-    "image": "https://s22.postimg.cc/rs31s4jf5/cake.png"
+    "image": "https://s22.postimg.cc/rs31s4jf5/cake.png",
+    "clicked": false
   },
   {
     "id": 2,
-    "image": "https://s22.postimg.cc/yvax7rjpt/boombox.png"
+    "image": "https://s22.postimg.cc/yvax7rjpt/boombox.png",
+    "clicked": false
   },
   {
     "id": 3,
-    "image": "https://s22.postimg.cc/parakwp8x/doughnut.png"
+    "image": "https://s22.postimg.cc/parakwp8x/doughnut.png",
+    "clicked": false
   },
   {
     "id": 4,
-    "image": "https://s22.postimg.cc/gshugky5t/hamburger.png"
+    "image": "https://s22.postimg.cc/gshugky5t/hamburger.png",
+    "clicked": false
   },
   {
     "id": 5,
-    "image": "https://s22.postimg.cc/w17rue9up/headphones.png"
+    "image": "https://s22.postimg.cc/w17rue9up/headphones.png",
+    "clicked": false
   },
   {
     "id": 6,
-    "image": "https://s22.postimg.cc/wqqk6rptt/icecream.png"
+    "image": "https://s22.postimg.cc/wqqk6rptt/icecream.png",
+    "clicked": false
   },
   {
     "id": 7,
-    "image": "https://s22.postimg.cc/6v6tnliv5/microphone.png"
+    "image": "https://s22.postimg.cc/6v6tnliv5/microphone.png",
+    "clicked": false
   },
   {
     "id": 8,
-    "image": "https://s22.postimg.cc/z82be3ew1/planet.png"
+    "image": "https://s22.postimg.cc/z82be3ew1/planet.png",
+    "clicked": false
   },
   {
     "id": 9,
-    "image": "https://s22.postimg.cc/6v6tnn0vl/popsicle.png"
+    "image": "https://s22.postimg.cc/6v6tnn0vl/popsicle.png",
+    "clicked": false
   },
   {
     "id": 10,
-    "image": "https://s22.postimg.cc/l1mkiuwb5/pizza.png"
+    "image": "https://s22.postimg.cc/l1mkiuwb5/pizza.png",
+    "clicked": false
   },
   {
     "id": 11,
-    "image": "https://s22.postimg.cc/tjw0n7xox/ticket.png"
+    "image": "https://s22.postimg.cc/tjw0n7xox/ticket.png",
+    "clicked": false
   },
   {
     "id": 12,
-    "image": "https://s22.postimg.cc/aesrdgqqp/watermelon.png"
+    "image": "https://s22.postimg.cc/aesrdgqqp/watermelon.png",
+    "clicked": false
   }
 ]

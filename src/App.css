@@ -22,7 +22,32 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: teal;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  color: white;
+}
+
+.fixed-top p{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 600px){
+  .fixed-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 125px;
+  padding-left: 10px;
+}
 }
