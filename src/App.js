@@ -89,10 +89,9 @@ class App extends Component {
   render() {
       return (
   <div>
-
       <div className="fixed-top">
           <p>Score: {this.state.score} </p>
-         <p> Top Score: {this.state.topScore} </p>
+          <p> Top Score: {this.state.topScore} </p>
        </div>
             <Header />
             <Imagegrid>
