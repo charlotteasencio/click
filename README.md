@@ -6,4 +6,4 @@ This is a game created using react. In order to win the game, a player must clic
 * React
 * node.js
 
-See a demo here: [Clicky Game](https://warm-everglades-28856.herokuapp.com/)
+See a demo here: [Clicky Game](http://charlotteasencio.com/click/)
