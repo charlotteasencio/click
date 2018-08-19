@@ -4,6 +4,5 @@ This is a game created using react. In order to win the game, a player must clic
 
 # Built with: 
 * React
-* node.js
 
 See a demo here: [Clicky Game](http://charlotteasencio.com/click/)

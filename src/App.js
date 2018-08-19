@@ -73,6 +73,7 @@ class App extends Component {
           //reset all of the clickeds to false
           for (let i = 0 ; i < images.length ; i++){
               images[i].clicked = false;
+
           }
 
           //shuffle all of the images
@@ -82,7 +83,7 @@ class App extends Component {
             score: score,
             images: images
           });
-
+          
       }
   };
 
